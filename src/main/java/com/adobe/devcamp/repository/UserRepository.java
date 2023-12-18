@@ -38,6 +38,12 @@ public class UserRepository implements GenericRepository<UserDTO> {
 
     @Override
     public void deleteById(String id) {
-        // TODO: implement this
+        // done
+        for (UserDTO u : storedUsers) {
+            if (u.getId().equals(id)) {
+                storedUsers.remove(u);
+                break;
+            }
+        }
     }
 }
