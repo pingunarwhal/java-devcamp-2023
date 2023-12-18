@@ -33,8 +33,8 @@ public class UserController {
 
     @GetMapping(path = "/users/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public UserDTO getUserById(@PathVariable("id") String id) {
-        // done
-        return userService.getUserById(id);
+        // TODO: implement this
+        return null;
     }
 }
 
